@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.coachpro.DashboardFragment"
+        android:label="Dashboard" />
+
+    <fragment
+        android:id="@+id/playersFragment"
+        android:name="com.example.coachpro.PlayersFragment"
+        android:label="Players" />
+
+    <fragment
+        android:id="@+id/sessionsFragment"
+        android:name="com.example.coachpro.SessionsFragment"
+        android:label="Sessions" />
+
+    <fragment
+        android:id="@+id/performanceFragment"
+        android:name="com.example.coachpro.PerformanceFragment"
+        android:label="Performance" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.coachpro.ProfileFragment"
+        android:label="Profile" />
+</navigation>

@@ -1,0 +1,18 @@
+<resources>
+    <style name="Base.Theme.CoachPro" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/accent_orange</item>
+        <item name="colorPrimaryVariant">@color/dark_card2</item>
+        <item name="colorOnPrimary">@color/text_white</item>
+        <item name="colorSecondary">@color/accent_orange_light</item>
+        <item name="android:windowBackground">@color/dark_bg</item>
+        <item name="android:statusBarColor">@color/dark_bg</item>
+        <item name="android:navigationBarColor">@color/bottom_nav_bg</item>
+    </style>
+
+    <style name="Theme.CoachPro" parent="Base.Theme.CoachPro" />
+
+    <style name="Theme.CoachPro.Splash" parent="Theme.CoachPro">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+
+</resources>

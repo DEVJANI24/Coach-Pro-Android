@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "957975029100",
+    "project_id": "coach-pro-d4a34",
+    "storage_bucket": "coach-pro-d4a34.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:957975029100:android:8cb1c7443c4e14292aff49",
+        "android_client_info": {
+          "package_name": "com.example.coachpro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdYwhxjxy0RGjFOTJJmQD6cSEoYxflL4A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

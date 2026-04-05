@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="CoachPro"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CoachPro">
+
+        <!-- Login Screen — App ka starting point -->
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Theme.CoachPro.Splash"
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
+        <!-- Register Screen -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"/>
+
+        <!-- Main Screen — Dashboard + Bottom Nav -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".AddPlayerActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".PlayerDetailActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".AddSessionActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".SessionDetailActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".AttendanceActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".AddPerformanceActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

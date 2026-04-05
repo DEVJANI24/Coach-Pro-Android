@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Dark Theme Colors -->
+    <color name="dark_bg">#1A1A2E</color>
+    <color name="dark_card">#16213E</color>
+    <color name="dark_card2">#0F3460</color>
+
+    <!-- Accent Colors -->
+    <color name="accent_orange">#FF6B35</color>
+    <color name="accent_orange_light">#FFB347</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#E0E0E0</color>
+    <color name="text_muted">#888888</color>
+    <color name="text_white">#FFFFFF</color>
+
+    <!-- Status Colors -->
+    <color name="status_green">#4CAF50</color>
+    <color name="status_red">#F44336</color>
+    <color name="status_blue">#64B5F6</color>
+
+    <!-- Bottom Nav -->
+    <color name="bottom_nav_bg">#0D0D1F</color>
+</resources>
