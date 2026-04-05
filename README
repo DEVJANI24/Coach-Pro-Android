@@ -1,0 +1,155 @@
+# CoachPro - Sports Coaching Management App
+
+A full-featured Android app for managing sports coaching teams.
+Built with Kotlin and Firebase as a portfolio project.
+
+---
+
+## About
+
+CoachPro helps coaches manage their players, practice sessions,
+attendance, and performance stats — all in one place.
+
+Built by a real Basketball Coach at Vision International School, Vadodara.
+
+---
+
+## Features
+
+- Login & Register with Firebase Authentication
+- Dashboard with real-time stats
+- Players Module — Add, View, Edit, Delete
+- Sessions Module — Schedule & manage practice sessions
+- Attendance Module — Mark Present / Absent per session
+- Performance Module — Track Points, Assists, Rebounds, Effort & Defense
+- Profile — Coach info, team stats & logout
+
+---
+
+## Tech Stack
+
+- Language     : Kotlin
+- UI           : XML Layouts + ViewBinding
+- Navigation   : Navigation Component + Bottom Navigation
+- Database     : Firebase Cloud Firestore
+- Auth         : Firebase Authentication
+- Design       : Material Design — Dark Theme + Orange Accent
+- Min SDK      : API 24 (Android 7.0+)
+- IDE          : Android Studio Otter 2025.2.1
+
+---
+
+## Project Structure
+
+app/
+  java/com.example.coachpro/
+    LoginActivity.kt
+    RegisterActivity.kt
+    MainActivity.kt
+    DashboardFragment.kt
+    PlayersFragment.kt
+    SessionsFragment.kt
+    PerformanceFragment.kt
+    ProfileFragment.kt
+    AddPlayerActivity.kt
+    PlayerDetailActivity.kt
+    AddSessionActivity.kt
+    SessionDetailActivity.kt
+    AttendanceActivity.kt
+    AddPerformanceActivity.kt
+    PlayerAdapter.kt
+    SessionAdapter.kt
+    AttendanceAdapter.kt
+    PerformanceAdapter.kt
+    Player.kt
+    Session.kt
+    Attendance.kt
+    Performance.kt
+
+  res/
+    layout/       - All XML layouts
+    drawable/     - Icons, shapes, backgrounds
+    navigation/   - nav_graph.xml
+    menu/         - bottom_nav_menu.xml
+    values/       - colors, themes, strings
+    mipmap/       - Launcher icons
+
+---
+
+## Firebase Structure
+
+coaches (collection)
+  {coachId}
+    name, email, school
+    players (subcollection)
+      {playerId} - name, age, className, position, parentName, parentPhone, status, coachNotes
+    sessions (subcollection)
+      {sessionId} - name, time, location, focus, dateMillis, status
+        attendance (subcollection)
+          {playerId} - playerName, isPresent
+        performance (subcollection)
+          {perfId} - playerName, points, assists, rebounds, effort, defense
+
+---
+
+## Setup & Installation
+
+1. Clone the repository
+   git clone https://github.com/yourusername/CoachPro-Android.git
+
+2. Firebase Setup
+   - Go to console.firebase.google.com
+   - Create a new project
+   - Add Android app with package name: com.example.coachpro
+   - Download google-services.json and paste inside app/ folder
+   - Enable Firebase Authentication (Email/Password)
+   - Enable Cloud Firestore (Test mode)
+
+3. Firestore Composite Index
+   - Collection : sessions
+   - Field      : dateMillis - Ascending
+   - Scope      : Collection
+
+4. Run the app
+   Open in Android Studio and click Run
+
+---
+
+## Modules Overview
+
+Module        Screens                      Firebase
+----------    -------------------------    ----------------
+Auth          Login, Register              Firebase Auth
+Dashboard     DashboardFragment            Firestore Read
+Players       PlayersList, Add, Detail     CRUD
+Sessions      SessionsList, Add, Detail    CRUD
+Attendance    AttendanceActivity           Batch Write
+Performance   PerformanceList, Add         CRUD
+Profile       ProfileFragment              Read + Auth Sign Out
+
+---
+
+## Future Improvements
+
+- Push Notifications (FCM) for session reminders
+- PDF Export for attendance reports
+- Player photo upload via Firebase Storage
+- Dark / Light theme toggle
+- Multi-sport support (Cricket, Football)
+- Stats graphs and charts
+
+---
+
+## About The Developer
+
+Dev — CS Graduate (VNSGU University) & Basketball Coach
+
+Built this project to combine two passions — sports coaching and
+Android development. Every feature solves a real problem faced
+while coaching students at Vision International School, Vadodara.
+
+---
+
+## License
+
+MIT License - free to use, modify and distribute.
